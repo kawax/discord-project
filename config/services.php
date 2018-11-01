@@ -44,6 +44,10 @@ return [
         'token'   => env('DISCORD_BOT_TOKEN'),
         'channel' => env('DISCORD_CHANNEL'),
         'guild'   => (int)env('DISCORD_GUILD'),
+        'bot'     => (int)env('DISCORD_BOT_ID'),
+        'admin'   => (int)env('DISCORD_ADMIN_ID'),
+        'private' => (int)env('DISCORD_PRIVATE'),
+        'role'    => (int)env('DISCORD_ROLE'),
     ],
 
 ];
