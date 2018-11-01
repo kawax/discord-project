@@ -70,7 +70,7 @@ class ServeCommand extends Command
             try {
                 //チャンネルでのメンション
                 if ($message->mentions->members->has(config('services.discord.bot'))) {
-                    $message->reply('Hi!')->done(null, function ($error) {
+                    $message->reply('Hi! ' . $message->author->username)->done(null, function ($error) {
                         echo $error . PHP_EOL;
                     });
                 }
