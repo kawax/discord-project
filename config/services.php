@@ -48,7 +48,7 @@ return [
         'admin'           => (int)env('DISCORD_ADMIN_ID'),
         'private'         => (int)env('DISCORD_PRIVATE'),
         'role'            => (int)env('DISCORD_ROLE'),
-        'laravel_channel' => env('DISCORD_LARAVEL_CHANNEL'),
+        'laravel_channel' => (int)env('DISCORD_LARAVEL_CHANNEL'),
     ],
 
 ];

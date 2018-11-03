@@ -38,7 +38,7 @@ class LatestCommand extends Command
      *
      * @param DiscordClient $client
      *
-     * @return mixed
+     * @throws \Exception
      */
     public function handle(DiscordClient $client)
     {
@@ -54,7 +54,7 @@ class LatestCommand extends Command
 
         try {
             $client->channel->createMessage([
-                'channel.id' => (int)config('services.discord.laravel_channel'),
+                'channel.id' => config('services.discord.laravel_channel'),
                 'content'    => $release['html_url'],
                 'embed'      => [
                     //                    "title"       => $release['tag_name'],
