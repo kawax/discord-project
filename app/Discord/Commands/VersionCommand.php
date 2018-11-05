@@ -7,6 +7,9 @@ use GrahamCampbell\GitHub\Facades\GitHub;
 
 class VersionCommand
 {
+    /**
+     * @var string
+     */
     public $command = 'version';
 
     /**

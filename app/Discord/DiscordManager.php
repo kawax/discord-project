@@ -41,7 +41,7 @@ class DiscordManager
 
         $command = Str::before(Str::after($message->content, $this->prefix), ' ');
 
-        return $this->commands[$this->prefix . $command]($message);
+        return $this->commands[$command]($message);
     }
 
     /**
@@ -83,6 +83,6 @@ class DiscordManager
     {
         $command = app($path);
 
-        $this->commands[$this->prefix . $command->command] = $command;
+        $this->commands[$command->command] = $command;
     }
 }

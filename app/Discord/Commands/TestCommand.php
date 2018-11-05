@@ -6,6 +6,9 @@ use CharlotteDunois\Yasmin\Models\Message;
 
 class TestCommand
 {
+    /**
+     * @var string
+     */
     public $command = 'test';
 
     /**
