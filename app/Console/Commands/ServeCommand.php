@@ -73,13 +73,12 @@ class ServeCommand extends Command
                     if ($message->mentions->members->has(config('services.discord.bot'))) {
                         //メンション時のみコマンドは有効
                         $reply = $manager->command($message);
-                        if (filled($reply)) {
-                            $message->reply($reply);
+                        if (empty($reply)) {
+                            $reply = 'Hi! ' . $message->author->username;
                         }
-
-                        //                        $message->reply('Hi! ' . $message->author->username)->done(null, function ($error) {
-                        //                            echo $error . PHP_EOL;
-                        //                        });
+                        $message->reply($reply)->done(null, function ($error) {
+                            echo $error . PHP_EOL;
+                        });
                     }
                 }
 
@@ -90,8 +89,8 @@ class ServeCommand extends Command
                     });
                 }
 
-            } catch
-            (\Exception $error) {
+            } catch (\Exception $error) {
+                $this->error($error->getMessage());
                 // Handle exception
             }
         });

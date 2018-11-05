@@ -35,6 +35,10 @@ class DiscordManager
      */
     public function command(Message $message)
     {
+        if (!str_contains($message->content, $this->prefix)) {
+            return '';
+        }
+
         $command = Str::before(Str::after($message->content, $this->prefix), ' ');
 
         return $this->commands[$this->prefix . $command]($message);
