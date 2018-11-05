@@ -35,7 +35,7 @@ class DiscordManager
      */
     public function command(Message $message)
     {
-        if (!str_contains($message->content, $this->prefix)) {
+        if (!Str::contains($message->content, $this->prefix)) {
             return '';
         }
 
@@ -81,7 +81,7 @@ class DiscordManager
      */
     protected function resolve($path)
     {
-        $command = resolve($path);
+        $command = app($path);
 
         $this->commands[$this->prefix . $command->command] = $command;
     }
