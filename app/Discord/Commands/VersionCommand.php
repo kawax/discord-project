@@ -19,7 +19,7 @@ class VersionCommand
      */
     public function __invoke(Message $message)
     {
-        $tags = Github::repo()->tags('laravel', 'framework');
+        $tags = GitHub::repo()->tags('laravel', 'framework');
 
         $version = $tags[0]['name'];
 
