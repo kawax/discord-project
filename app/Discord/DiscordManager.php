@@ -31,7 +31,7 @@ class DiscordManager
     /**
      * @param Message $message
      *
-     * @return mixed
+     * @return string
      */
     public function command(Message $message)
     {
@@ -41,7 +41,11 @@ class DiscordManager
 
         $command = Str::before(Str::after($message->content, $this->prefix), ' ');
 
-        return $this->commands[$command]($message);
+        if (Arr::has($this->commands, $command)) {
+            return $this->commands[$command]($message);
+        } else {
+            return 'Command Not Found!';
+        }
     }
 
     /**
