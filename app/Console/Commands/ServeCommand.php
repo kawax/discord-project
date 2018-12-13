@@ -88,7 +88,6 @@ class ServeCommand extends Command
                         echo $error . PHP_EOL;
                     });
                 }
-
             } catch (\Exception $error) {
                 $this->error($error->getMessage());
                 // Handle exception

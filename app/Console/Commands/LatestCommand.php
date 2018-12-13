@@ -62,7 +62,6 @@ class LatestCommand extends Command
                     "description" => str_limit($release['body'], 2000),
                 ],
             ]);
-
         } catch (\Exception $e) {
             logger()->error($e->getMessage());
         }
