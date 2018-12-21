@@ -49,6 +49,18 @@ return [
         'private'         => (int)env('DISCORD_PRIVATE'),
         'role'            => (int)env('DISCORD_ROLE'),
         'laravel_channel' => (int)env('DISCORD_LARAVEL_CHANNEL'),
+
+        'prefix'    => '/',
+        'not_found' => 'Command Not Found!',
+        'path'      => [
+            'commands' => app_path('Discord/Commands'),
+            'directs'  => app_path('Discord/Directs'),
+        ],
+        'yasmin'    => [
+            'ws.disabledEvents' => [
+                'TYPING_START',
+            ],
+        ],
     ],
 
 ];

@@ -4,11 +4,10 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-use React\EventLoop\Factory;
-use CharlotteDunois\Yasmin\Client;
+use CharlotteDunois\Yasmin\Client as Yasmin;
 use CharlotteDunois\Yasmin\Models\Message;
 
-use App\Discord\DiscordManager;
+use Revolution\DiscordManager\Facades\DiscordManager;
 
 class ServeCommand extends Command
 {
@@ -39,19 +38,12 @@ class ServeCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param DiscordManager $manager
+     * @param Yasmin $client
      *
      * @return mixed
      */
-    public function handle(DiscordManager $manager)
+    public function handle(Yasmin $client)
     {
-        $loop = Factory::create();
-        $client = new Client([
-            'ws.disabledEvents' => [
-                'TYPING_START',
-            ],
-        ], $loop);
-
         $client->on('error', function ($error) {
             echo $error . PHP_EOL;
         });
@@ -60,7 +52,7 @@ class ServeCommand extends Command
             echo 'Logged in as ' . $client->user->tag . ' created on ' . $client->user->createdAt->format('d.m.Y H:i:s') . PHP_EOL;
         });
 
-        $client->on('message', function (Message $message) use ($manager) {
+        $client->on('message', function (Message $message) {
             echo 'Received Message from ' . $message->author->tag . ' in ' . ($message->channel->type === 'text' ? 'channel #' . $message->channel->name : 'DM') . ' with ' . $message->attachments->count() . ' attachment(s) and ' . \count($message->embeds) . ' embed(s)' . PHP_EOL;
 
             if ($message->author->bot) {
@@ -72,7 +64,7 @@ class ServeCommand extends Command
                     //チャンネルでのメンション
                     if ($message->mentions->members->has(config('services.discord.bot'))) {
                         //メンション時のみコマンドは有効
-                        $reply = $manager->command($message);
+                        $reply = DiscordManager::command($message);
                         if (empty($reply)) {
                             $reply = 'Hi! ' . $message->author->username;
                         }
@@ -84,9 +76,13 @@ class ServeCommand extends Command
 
                 //DMの場合
                 if ($message->channel->type === 'dm') {
-                    $message->reply('Hi! DM')->done(null, function ($error) {
-                        echo $error . PHP_EOL;
-                    });
+                    $reply = DiscordManager::direct($message);
+
+                    if (filled($reply)) {
+                        $message->reply($reply)->done(null, function ($error) {
+                            echo $error . PHP_EOL;
+                        });
+                    }
                 }
             } catch (\Exception $error) {
                 $this->error($error->getMessage());
@@ -95,6 +91,6 @@ class ServeCommand extends Command
         });
 
         $client->login(config('services.discord.token'));
-        $loop->run();
+        $client->getLoop()->run();
     }
 }
