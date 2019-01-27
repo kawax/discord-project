@@ -2010,16 +2010,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.21",
+            "version": "v5.7.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "25f74458a242b61cc9e9c09d31f94fb13ed805f3"
+                "reference": "64a7749bd9e8df68addce1d01a54bcf606141f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/25f74458a242b61cc9e9c09d31f94fb13ed805f3",
-                "reference": "25f74458a242b61cc9e9c09d31f94fb13ed805f3",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/64a7749bd9e8df68addce1d01a54bcf606141f29",
+                "reference": "64a7749bd9e8df68addce1d01a54bcf606141f29",
                 "shasum": ""
             },
             "require": {
@@ -2152,7 +2152,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-01-15T15:20:32+00:00"
+            "time": "2019-01-22T15:08:35+00:00"
         },
         {
             "name": "laravel/nexmo-notification-channel",
@@ -2653,16 +2653,16 @@
         },
         {
             "name": "nexmo/client",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nexmo/nexmo-php.git",
-                "reference": "01809cc1e17a5af275913c49bb5d444eb6cc06d4"
+                "reference": "3dc03ca1dab726a23b757110897740e54304fc65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nexmo/nexmo-php/zipball/01809cc1e17a5af275913c49bb5d444eb6cc06d4",
-                "reference": "01809cc1e17a5af275913c49bb5d444eb6cc06d4",
+                "url": "https://api.github.com/repos/Nexmo/nexmo-php/zipball/3dc03ca1dab726a23b757110897740e54304fc65",
+                "reference": "3dc03ca1dab726a23b757110897740e54304fc65",
                 "shasum": ""
             },
             "require": {
@@ -2697,7 +2697,7 @@
                 }
             ],
             "description": "PHP Client for using Nexmo's API.",
-            "time": "2018-12-17T10:47:50+00:00"
+            "time": "2019-01-02T09:06:47+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2858,21 +2858,21 @@
         },
         {
             "name": "php-http/cache-plugin",
-            "version": "v1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/cache-plugin.git",
-                "reference": "c573ac6ea9b4e33fad567f875b844229d18000b9"
+                "reference": "8e2505d2090316fac7cce637b39b6bbb5249c5a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/cache-plugin/zipball/c573ac6ea9b4e33fad567f875b844229d18000b9",
-                "reference": "c573ac6ea9b4e33fad567f875b844229d18000b9",
+                "url": "https://api.github.com/repos/php-http/cache-plugin/zipball/8e2505d2090316fac7cce637b39b6bbb5249c5a8",
+                "reference": "8e2505d2090316fac7cce637b39b6bbb5249c5a8",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.4 || ^7.0",
-                "php-http/client-common": "^1.1",
+                "php-http/client-common": "^1.9 || ^2.0",
                 "php-http/message-factory": "^1.0",
                 "psr/cache": "^1.0",
                 "symfony/options-resolver": "^2.6 || ^3.0 || ^4.0"
@@ -2884,7 +2884,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -2910,7 +2910,7 @@
                 "httplug",
                 "plugin"
             ],
-            "time": "2017-11-29T20:45:41+00:00"
+            "time": "2019-01-23T16:51:58+00:00"
         },
         {
             "name": "php-http/client-common",
@@ -2975,16 +2975,16 @@
         },
         {
             "name": "php-http/discovery",
-            "version": "1.5.2",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/discovery.git",
-                "reference": "ffef11d54171336d841a34816a35bc035fb8cef0"
+                "reference": "02b7ea21eafa0757af04140890a67d8ed45f83b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/discovery/zipball/ffef11d54171336d841a34816a35bc035fb8cef0",
-                "reference": "ffef11d54171336d841a34816a35bc035fb8cef0",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/02b7ea21eafa0757af04140890a67d8ed45f83b2",
+                "reference": "02b7ea21eafa0757af04140890a67d8ed45f83b2",
                 "shasum": ""
             },
             "require": {
@@ -2994,8 +2994,7 @@
                 "nyholm/psr7": "<1.0"
             },
             "require-dev": {
-                "henrikbjorn/phpspec-code-coverage": "^2.0.2",
-                "php-http/httplug": "^1.0|^2.0",
+                "php-http/httplug": "^1.0 || ^2.0",
                 "php-http/message-factory": "^1.0",
                 "phpspec/phpspec": "^2.4",
                 "puli/composer-plugin": "1.0.0-beta10"
@@ -3036,7 +3035,7 @@
                 "message",
                 "psr7"
             ],
-            "time": "2018-12-31T07:31:26+00:00"
+            "time": "2019-01-23T12:41:22+00:00"
         },
         {
             "name": "php-http/guzzle6-adapter",
@@ -3764,16 +3763,16 @@
         },
         {
             "name": "ratchet/pawl",
-            "version": "v0.3.3",
+            "version": "v0.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ratchetphp/Pawl.git",
-                "reference": "0aaacb8d3f6bcc02138bb8385130f757ecce5649"
+                "reference": "3a7d5b78e0deaec82f42513a4a3193a8eb12feb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ratchetphp/Pawl/zipball/0aaacb8d3f6bcc02138bb8385130f757ecce5649",
-                "reference": "0aaacb8d3f6bcc02138bb8385130f757ecce5649",
+                "url": "https://api.github.com/repos/ratchetphp/Pawl/zipball/3a7d5b78e0deaec82f42513a4a3193a8eb12feb1",
+                "reference": "3a7d5b78e0deaec82f42513a4a3193a8eb12feb1",
                 "shasum": ""
             },
             "require": {
@@ -3809,7 +3808,7 @@
                 "websocket",
                 "websocket client"
             ],
-            "time": "2019-01-01T19:05:59+00:00"
+            "time": "2019-01-14T14:09:36+00:00"
         },
         {
             "name": "ratchet/rfc6455",
@@ -4386,16 +4385,16 @@
         },
         {
             "name": "revolution/discord-manager",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/discord-manager.git",
-                "reference": "a748a1e7aedc59c1f9d805295fabae91d019026a"
+                "reference": "2b000f16b31cc8f62a8bf5394b521766286ee0a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/a748a1e7aedc59c1f9d805295fabae91d019026a",
-                "reference": "a748a1e7aedc59c1f9d805295fabae91d019026a",
+                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/2b000f16b31cc8f62a8bf5394b521766286ee0a8",
+                "reference": "2b000f16b31cc8f62a8bf5394b521766286ee0a8",
                 "shasum": ""
             },
             "require": {
@@ -4442,7 +4441,7 @@
                 "discord",
                 "laravel"
             ],
-            "time": "2019-01-18T01:55:51+00:00"
+            "time": "2019-01-26T11:18:06+00:00"
         },
         {
             "name": "seld/jsonlint",
