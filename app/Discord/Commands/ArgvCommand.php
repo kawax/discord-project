@@ -2,6 +2,8 @@
 
 namespace App\Discord\Commands;
 
+use Illuminate\Support\Str;
+
 use CharlotteDunois\Yasmin\Models\Message;
 
 use Revolution\DiscordManager\Concerns\Input;
@@ -22,7 +24,7 @@ class ArgvCommand
      */
     public function __invoke(Message $message)
     {
-        $argv = explode(' ', str_after($message->content, config('services.discord.prefix')));
+        $argv = explode(' ', Str::after($message->content, config('services.discord.prefix')));
 
         $input = $this->input($argv);
 

@@ -4,6 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
+use Illuminate\Support\Str;
+
 use GrahamCampbell\GitHub\Facades\GitHub;
 use RestCord\DiscordClient;
 
@@ -59,7 +61,7 @@ class LatestCommand extends Command
                 'embed'      => [
                     //                    "title"       => $release['tag_name'],
                     //                    "url"         => $release['html_url'],
-                    "description" => str_limit($release['body'], 2000),
+                    "description" => Str::limit($release['body'], 2000),
                 ],
             ]);
         } catch (\Exception $e) {
