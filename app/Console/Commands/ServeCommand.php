@@ -4,8 +4,10 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-use CharlotteDunois\Yasmin\Client as Yasmin;
+use Revolution\DiscordManager\Facades\Yasmin;
 use CharlotteDunois\Yasmin\Models\Message;
+use CharlotteDunois\Yasmin\Interfaces\TextChannelInterface;
+use CharlotteDunois\Yasmin\Interfaces\DMChannelInterface;
 
 use Revolution\DiscordManager\Facades\DiscordManager;
 
@@ -38,49 +40,48 @@ class ServeCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param Yasmin $client
-     *
      * @return mixed
      */
-    public function handle(Yasmin $client)
+    public function handle()
     {
-        $client->on('error', function ($error) {
-            echo $error . PHP_EOL;
+        Yasmin::on('error', function ($error) {
+            echo $error.PHP_EOL;
         });
 
-        $client->on('ready', function () use ($client) {
-            echo 'Logged in as ' . $client->user->tag . ' created on ' . $client->user->createdAt->format('d.m.Y H:i:s') . PHP_EOL;
+        Yasmin::on('ready', function () {
+            echo 'Logged in as '.Yasmin::user()->tag.' created on '.Yasmin::user()->createdAt->format('d.m.Y H:i:s').PHP_EOL;
         });
 
-        $client->on('message', function (Message $message) {
-            echo 'Received Message from ' . $message->author->tag . ' in ' . ($message->channel->type === 'text' ? 'channel #' . $message->channel->name : 'DM') . ' with ' . $message->attachments->count() . ' attachment(s) and ' . \count($message->embeds) . ' embed(s)' . PHP_EOL;
+        Yasmin::on('message', function (Message $message) {
+            //dd($message->channel);
+            echo 'Received Message from '.$message->author->tag.' in '.($message->channel instanceOf TextChannelInterface ? 'channel #'.$message->channel->name : 'DM').' with '.$message->attachments->count().' attachment(s) and '.\count($message->embeds).' embed(s)'.PHP_EOL;
 
             if ($message->author->bot) {
                 return;
             }
 
             try {
-                if ($message->channel->type === 'text') {
+                if ($message->channel instanceOf TextChannelInterface) {
                     //チャンネルでのメンション
                     if ($message->mentions->members->has(config('services.discord.bot'))) {
                         //メンション時のみコマンドは有効
                         $reply = DiscordManager::command($message);
                         if (empty($reply)) {
-                            $reply = 'Hi! ' . $message->author->username;
+                            $reply = 'Hi! '.$message->author->username;
                         }
                         $message->reply($reply)->done(null, function ($error) {
-                            echo $error . PHP_EOL;
+                            echo $error.PHP_EOL;
                         });
                     }
                 }
 
                 //DMの場合
-                if ($message->channel->type === 'dm') {
+                if ($message->channel instanceOf DMChannelInterface) {
                     $reply = DiscordManager::direct($message);
 
                     if (filled($reply)) {
                         $message->reply($reply)->done(null, function ($error) {
-                            echo $error . PHP_EOL;
+                            echo $error.PHP_EOL;
                         });
                     }
                 }
@@ -90,7 +91,7 @@ class ServeCommand extends Command
             }
         });
 
-        $client->login(config('services.discord.token'));
-        $client->getLoop()->run();
+        Yasmin::login(config('services.discord.token'));
+        Yasmin::getLoop()->run();
     }
 }
