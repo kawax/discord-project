@@ -54,14 +54,14 @@ class ServeCommand extends Command
 
         Yasmin::on('message', function (Message $message) {
             //dd($message->channel);
-            echo 'Received Message from '.$message->author->tag.' in '.($message->channel instanceOf TextChannelInterface ? 'channel #'.$message->channel->name : 'DM').' with '.$message->attachments->count().' attachment(s) and '.\count($message->embeds).' embed(s)'.PHP_EOL;
+            echo 'Received Message from '.$message->author->tag.' in '.($message->channel instanceof TextChannelInterface ? 'channel #'.$message->channel->name : 'DM').' with '.$message->attachments->count().' attachment(s) and '.\count($message->embeds).' embed(s)'.PHP_EOL;
 
             if ($message->author->bot) {
                 return;
             }
 
             try {
-                if ($message->channel instanceOf TextChannelInterface) {
+                if ($message->channel instanceof TextChannelInterface) {
                     //チャンネルでのメンション
                     if ($message->mentions->members->has(config('services.discord.bot'))) {
                         //メンション時のみコマンドは有効
@@ -76,7 +76,7 @@ class ServeCommand extends Command
                 }
 
                 //DMの場合
-                if ($message->channel instanceOf DMChannelInterface) {
+                if ($message->channel instanceof DMChannelInterface) {
                     $reply = DiscordManager::direct($message);
 
                     if (filled($reply)) {
