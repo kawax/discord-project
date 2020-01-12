@@ -10,7 +10,7 @@
         "fideloper/proxy": "^4.0",
         "graham-campbell/github": "^8.0",
         "laravel/framework": "^6.0",
-        "laravel/tinker": "^1.0",
+        "laravel/tinker": "^2.0",
         "php-http/guzzle6-adapter": "^1.1",
         "revolution/discord-manager": "^1.0"
     },
