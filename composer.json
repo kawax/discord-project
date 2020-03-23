@@ -8,10 +8,10 @@
         "php": "^7.2",
         "barryvdh/laravel-ide-helper": "^2.4",
         "fideloper/proxy": "^4.0",
-        "graham-campbell/github": "^8.0",
+        "graham-campbell/github": "^9.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^2.0",
-        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/guzzle6-adapter": "^2.0",
         "revolution/discord-manager": "^1.0"
     },
     "require-dev": {
