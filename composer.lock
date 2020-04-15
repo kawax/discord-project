@@ -1337,16 +1337,16 @@
         },
         {
             "name": "graham-campbell/github",
-            "version": "v9.1.0",
+            "version": "v9.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Laravel-GitHub.git",
-                "reference": "37fb007e8a5ade183f23d4e860586f70c27103f7"
+                "reference": "744769bda95eab0705577c74ead32a0bc8c16937"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-GitHub/zipball/37fb007e8a5ade183f23d4e860586f70c27103f7",
-                "reference": "37fb007e8a5ade183f23d4e860586f70c27103f7",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-GitHub/zipball/744769bda95eab0705577c74ead32a0bc8c16937",
+                "reference": "744769bda95eab0705577c74ead32a0bc8c16937",
                 "shasum": ""
             },
             "require": {
@@ -1411,34 +1411,20 @@
                 "laravel",
                 "php-github-api"
             ],
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/GrahamJCampbell",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/github",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-03-17T00:23:31+00:00"
+            "time": "2020-04-14T17:41:27+00:00"
         },
         {
             "name": "graham-campbell/manager",
-            "version": "v4.5.1",
+            "version": "v4.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Laravel-Manager.git",
-                "reference": "36e856bb6d56a079e7bb7ef4eb47c21d0dedd5c9"
+                "reference": "69ade143dc9629448f70a19bfbd43bedf51c6093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Manager/zipball/36e856bb6d56a079e7bb7ef4eb47c21d0dedd5c9",
-                "reference": "36e856bb6d56a079e7bb7ef4eb47c21d0dedd5c9",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Manager/zipball/69ade143dc9629448f70a19bfbd43bedf51c6093",
+                "reference": "69ade143dc9629448f70a19bfbd43bedf51c6093",
                 "shasum": ""
             },
             "require": {
@@ -1485,7 +1471,7 @@
                 "laravel",
                 "manager"
             ],
-            "time": "2020-03-01T11:25:27+00:00"
+            "time": "2020-04-14T12:03:27+00:00"
         },
         {
             "name": "guzzlehttp/command",
@@ -2226,16 +2212,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.18.6",
+            "version": "v6.18.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4ef5f9612c2694c915f53f0cec3e4081e9bfc778"
+                "reference": "9914b1d50e4395428ee95618354ffa7fc56e7968"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4ef5f9612c2694c915f53f0cec3e4081e9bfc778",
-                "reference": "4ef5f9612c2694c915f53f0cec3e4081e9bfc778",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9914b1d50e4395428ee95618354ffa7fc56e7968",
+                "reference": "9914b1d50e4395428ee95618354ffa7fc56e7968",
                 "shasum": ""
             },
             "require": {
@@ -2368,7 +2354,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-04-08T15:51:23+00:00"
+            "time": "2020-04-14T14:12:01+00:00"
         },
         {
             "name": "laravel/tinker",
