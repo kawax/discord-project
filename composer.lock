@@ -2293,16 +2293,16 @@
         },
         {
             "name": "laravel-notification-channels/discord",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-notification-channels/discord.git",
-                "reference": "68fa3fe51d48d257ed9775087c916d769c5f09fe"
+                "reference": "3b245aeb3f39e5f491fae075707bcafa5f6f109e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-notification-channels/discord/zipball/68fa3fe51d48d257ed9775087c916d769c5f09fe",
-                "reference": "68fa3fe51d48d257ed9775087c916d769c5f09fe",
+                "url": "https://api.github.com/repos/laravel-notification-channels/discord/zipball/3b245aeb3f39e5f491fae075707bcafa5f6f109e",
+                "reference": "3b245aeb3f39e5f491fae075707bcafa5f6f109e",
                 "shasum": ""
             },
             "require": {
@@ -2353,20 +2353,20 @@
                 "laravel",
                 "notification"
             ],
-            "time": "2020-03-07T00:25:15+00:00"
+            "time": "2020-07-20T23:30:02+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v6.18.25",
+            "version": "v6.18.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "fd4c42cb49b8777473d1161ef15d1104b2a33d6c"
+                "reference": "d11b6168c65251ffa81ae0dfaf017ad2f30013da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/fd4c42cb49b8777473d1161ef15d1104b2a33d6c",
-                "reference": "fd4c42cb49b8777473d1161ef15d1104b2a33d6c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d11b6168c65251ffa81ae0dfaf017ad2f30013da",
+                "reference": "d11b6168c65251ffa81ae0dfaf017ad2f30013da",
                 "shasum": ""
             },
             "require": {
@@ -2501,7 +2501,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-07-10T16:41:03+00:00"
+            "time": "2020-07-21T14:25:39+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -2754,21 +2754,21 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.25.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "3022efff205e2448b560c833c6fbbf91c3139168"
+                "reference": "38914429aac460e8e4616c8cb486ecb40ec90bb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/3022efff205e2448b560c833c6fbbf91c3139168",
-                "reference": "3022efff205e2448b560c833c6fbbf91c3139168",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/38914429aac460e8e4616c8cb486ecb40ec90bb1",
+                "reference": "38914429aac460e8e4616c8cb486ecb40ec90bb1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
+                "php": ">=7.2",
+                "psr/log": "^1.0.1"
             },
             "provide": {
                 "psr/log-implementation": "1.0.0"
@@ -2776,32 +2776,36 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
-                "graylog2/gelf-php": "~1.0",
+                "elasticsearch/elasticsearch": "^6.0",
+                "graylog2/gelf-php": "^1.4.2",
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
                 "php-parallel-lint/php-parallel-lint": "^1.0",
-                "phpunit/phpunit": "~4.5",
+                "phpspec/prophecy": "^1.6.1",
+                "phpunit/phpunit": "^8.5",
+                "predis/predis": "^1.1",
+                "rollbar/rollbar": "^1.3",
                 "ruflin/elastica": ">=0.90 <3.0",
-                "sentry/sentry": "^0.13",
                 "swiftmailer/swiftmailer": "^5.3|^6.0"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
                 "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
                 "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-                "sentry/sentry": "Allow sending log messages to a Sentry server"
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -2837,7 +2841,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-22T07:31:27+00:00"
+            "time": "2020-05-22T08:12:19+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -3189,16 +3193,16 @@
         },
         {
             "name": "php-http/client-common",
-            "version": "2.2.1",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/client-common.git",
-                "reference": "d70de2f7bf575ef19350b8aab504857943ab2922"
+                "reference": "e37e46c610c87519753135fb893111798c69076a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/client-common/zipball/d70de2f7bf575ef19350b8aab504857943ab2922",
-                "reference": "d70de2f7bf575ef19350b8aab504857943ab2922",
+                "url": "https://api.github.com/repos/php-http/client-common/zipball/e37e46c610c87519753135fb893111798c69076a",
+                "reference": "e37e46c610c87519753135fb893111798c69076a",
                 "shasum": ""
             },
             "require": {
@@ -3230,7 +3234,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2.x-dev"
+                    "dev-master": "2.3.x-dev"
                 }
             },
             "autoload": {
@@ -3256,7 +3260,7 @@
                 "http",
                 "httplug"
             ],
-            "time": "2020-07-13T15:38:36+00:00"
+            "time": "2020-07-21T10:04:13+00:00"
         },
         {
             "name": "php-http/discovery",
@@ -4846,25 +4850,25 @@
         },
         {
             "name": "restcord/restcord",
-            "version": "0.3.2",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/restcord/restcord.git",
-                "reference": "2e332138428a91fbcc70630c324aa5a449c11b01"
+                "reference": "1348e4d7fcd12709ef7492cd12564f446e831a1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/restcord/restcord/zipball/2e332138428a91fbcc70630c324aa5a449c11b01",
-                "reference": "2e332138428a91fbcc70630c324aa5a449c11b01",
+                "url": "https://api.github.com/repos/restcord/restcord/zipball/1348e4d7fcd12709ef7492cd12564f446e831a1c",
+                "reference": "1348e4d7fcd12709ef7492cd12564f446e831a1c",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3",
                 "guzzlehttp/guzzle-services": "^1.0",
-                "monolog/monolog": "^1.22",
+                "monolog/monolog": "^1.22|^2.0",
                 "netresearch/jsonmapper": "^1.4",
                 "php": "^5.6|^7.0",
-                "symfony/options-resolver": "^2.6|^3.0|^4.0"
+                "symfony/options-resolver": "^2.6|^3.0|^4.0|^5.0"
             },
             "require-dev": {
                 "beberlei/assert": "^2.7",
@@ -4892,20 +4896,20 @@
                 }
             ],
             "description": "REST Library for the Discord API",
-            "time": "2019-08-08T23:33:12+00:00"
+            "time": "2020-05-30T19:11:48+00:00"
         },
         {
             "name": "revolution/discord-manager",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/discord-manager.git",
-                "reference": "5cf6ff5ebf338a2d538c40255f84064905918dea"
+                "reference": "5dbd833a345f63a344f02b745ece608deca0439d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/5cf6ff5ebf338a2d538c40255f84064905918dea",
-                "reference": "5cf6ff5ebf338a2d538c40255f84064905918dea",
+                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/5dbd833a345f63a344f02b745ece608deca0439d",
+                "reference": "5dbd833a345f63a344f02b745ece608deca0439d",
                 "shasum": ""
             },
             "require": {
@@ -4913,7 +4917,7 @@
                 "laravel-discord/yasmin": "^0.8",
                 "laravel-notification-channels/discord": "^1.0",
                 "php": "^7.2||^8.0",
-                "restcord/restcord": "^0.3.0"
+                "restcord/restcord": "^0.4.0"
             },
             "conflict": {
                 "cakephp/core": "*"
@@ -4954,7 +4958,7 @@
                 "discord",
                 "laravel"
             ],
-            "time": "2020-04-27T10:28:46+00:00"
+            "time": "2020-07-21T07:13:24+00:00"
         },
         {
             "name": "ringcentral/psr7",
@@ -5579,6 +5583,70 @@
             "time": "2020-05-24T08:33:35+00:00"
         },
         {
+            "name": "symfony/deprecation-contracts",
+            "version": "v2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5e20b83385a77593259c9f8beb2c43cd03b2ac14",
+                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-06T08:49:21+00:00"
+        },
+        {
             "name": "symfony/error-handler",
             "version": "v4.4.10",
             "source": {
@@ -6189,25 +6257,27 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.4.10",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "73e1d0fe11ffceb7b7d4ca55b7381cd7ce0bac05"
+                "reference": "663f5dd5e14057d1954fe721f9709d35837f2447"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/73e1d0fe11ffceb7b7d4ca55b7381cd7ce0bac05",
-                "reference": "73e1d0fe11ffceb7b7d4ca55b7381cd7ce0bac05",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/663f5dd5e14057d1954fe721f9709d35837f2447",
+                "reference": "663f5dd5e14057d1954fe721f9709d35837f2447",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1",
+                "symfony/polyfill-php80": "^1.15"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.4-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -6253,7 +6323,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-23T12:09:32+00:00"
+            "time": "2020-05-23T13:08:13+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
