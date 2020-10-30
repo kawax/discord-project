@@ -62,7 +62,7 @@ class ServeCommand extends Command
             'message',
             function (Message $message) {
                 //dd($message->channel);
-                echo 'Received Message from '.$message->author->tag.' in '.($message->channel instanceof DMChannelInterface ? 'DM' : 'channel #'.$message->channel->name).' with '.$message->attachments->count(
+                echo 'Received Message from '.$message->author->tag.' in '.($message->channel instanceof DMChannelInterface ? 'DM' : 'channel #'.$message->channel->name ?? 'channel').' with '.$message->attachments->count(
                     ).' attachment(s) and '.\count($message->embeds).' embed(s)'.PHP_EOL;
 
                 if ($message->author->bot) {
