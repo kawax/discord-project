@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9ff622b88f379a2f162c0c43f0e343f",
+    "content-hash": "74172ff3c5063ff595ce80a92834526a",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -5520,19 +5520,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/discord-manager.git",
-                "reference": "669a97e869e8b5b72be1b84309ac1912c648e79e"
+                "reference": "5d1030886065ebefa6b70542d98ea5bc9a037451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/669a97e869e8b5b72be1b84309ac1912c648e79e",
-                "reference": "669a97e869e8b5b72be1b84309ac1912c648e79e",
+                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/5d1030886065ebefa6b70542d98ea5bc9a037451",
+                "reference": "5d1030886065ebefa6b70542d98ea5bc9a037451",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^6.0||^7.0||^8.0",
                 "laravel-discord/yasmin": "^1.0-beta.1",
                 "laravel-notification-channels/discord": "^1.0",
-                "php": "^7.2||^8.0",
+                "php": "^7.3||^8.0",
                 "restcord/restcord": "^0.4.0"
             },
             "conflict": {
@@ -5579,7 +5579,7 @@
                 "issues": "https://github.com/kawax/discord-manager/issues",
                 "source": "https://github.com/kawax/discord-manager/tree/master"
             },
-            "time": "2020-10-30T06:15:37+00:00"
+            "time": "2020-10-30T06:19:32+00:00"
         },
         {
             "name": "ringcentral/psr7",
@@ -11156,7 +11156,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.2||^8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
