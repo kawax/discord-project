@@ -12,7 +12,7 @@
         "laravel/framework": "^6.0",
         "laravel/tinker": "^2.0",
         "php-http/guzzle6-adapter": "^2.0",
-        "revolution/discord-manager": "^1.0"
+        "revolution/discord-manager": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
