@@ -62,7 +62,7 @@ return [
             'ws.disabledEvents' => [
                 'TYPING_START',
             ],
-            'intents'           => 32767,
+            //'intents'           => 32767,
         ],
     ],
 
