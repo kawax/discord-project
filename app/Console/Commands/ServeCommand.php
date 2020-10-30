@@ -52,9 +52,11 @@ class ServeCommand extends Command
         Yasmin::on(
             'ready',
             function () {
-                echo 'Logged in as '.Yasmin::user()->tag.' created on '.Yasmin::user()->createdAt->format(
+                info(
+                    'Logged in as '.Yasmin::user()->tag.' created on '.Yasmin::user()->createdAt->format(
                         'd.m.Y H:i:s'
-                    ).PHP_EOL;
+                    ).PHP_EOL
+                );
             }
         );
 
@@ -62,7 +64,7 @@ class ServeCommand extends Command
             'message',
             function (Message $message) {
                 //dd($message->channel);
-                echo 'Received Message from '.$message->author->tag.PHP_EOL;
+                info('Received Message from '.$message->author->tag.PHP_EOL);
 
                 if ($message->author->bot) {
                     return;
