@@ -2377,12 +2377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/Yasmin.git",
-                "reference": "1c0a09432900d2f80a5175ef8036ae770a1fd1f4"
+                "reference": "ac69147025ecb060e229d70767a7e1407d155c80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/1c0a09432900d2f80a5175ef8036ae770a1fd1f4",
-                "reference": "1c0a09432900d2f80a5175ef8036ae770a1fd1f4",
+                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/ac69147025ecb060e229d70767a7e1407d155c80",
+                "reference": "ac69147025ecb060e229d70767a7e1407d155c80",
                 "shasum": ""
             },
             "require": {
@@ -2427,7 +2427,7 @@
             "support": {
                 "source": "https://github.com/kawax/Yasmin/tree/master"
             },
-            "time": "2020-10-30T22:46:44+00:00"
+            "time": "2020-10-30T23:28:08+00:00"
         },
         {
             "name": "laravel-notification-channels/discord",
@@ -5521,12 +5521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/discord-manager.git",
-                "reference": "2eeaa7945766eb2d04c60ffaa60cba468149abcf"
+                "reference": "fcc73048545691d488d6493afc1aeb44a6783695"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/2eeaa7945766eb2d04c60ffaa60cba468149abcf",
-                "reference": "2eeaa7945766eb2d04c60ffaa60cba468149abcf",
+                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/fcc73048545691d488d6493afc1aeb44a6783695",
+                "reference": "fcc73048545691d488d6493afc1aeb44a6783695",
                 "shasum": ""
             },
             "require": {
@@ -5580,7 +5580,7 @@
                 "issues": "https://github.com/kawax/discord-manager/issues",
                 "source": "https://github.com/kawax/discord-manager/tree/master"
             },
-            "time": "2020-10-30T07:19:09+00:00"
+            "time": "2020-10-30T23:33:39+00:00"
         },
         {
             "name": "ringcentral/psr7",

@@ -1,6 +1,6 @@
 <?php
 
-use CharlotteDunois\Yasmin\WebSocket\WSManager;
+use CharlotteDunois\Yasmin\WebSocket\Intents;
 
 return [
 
@@ -62,7 +62,7 @@ return [
             'ws.disabledEvents' => [
                 'TYPING_START',
             ],
-            'intents'           => 14077,
+            'intents'           => array_sum(Intents::default()),
         ],
     ],
 
