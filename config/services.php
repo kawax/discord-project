@@ -1,5 +1,7 @@
 <?php
 
+use CharlotteDunois\Yasmin\WebSocket\WSManager;
+
 return [
 
     /*
@@ -43,12 +45,12 @@ return [
     'discord' => [
         'token'           => env('DISCORD_BOT_TOKEN'),
         'channel'         => env('DISCORD_CHANNEL'),
-        'guild'           => (int)env('DISCORD_GUILD'),
-        'bot'             => (int)env('DISCORD_BOT_ID'),
-        'admin'           => (int)env('DISCORD_ADMIN_ID'),
-        'private'         => (int)env('DISCORD_PRIVATE'),
-        'role'            => (int)env('DISCORD_ROLE'),
-        'laravel_channel' => (int)env('DISCORD_LARAVEL_CHANNEL'),
+        'guild'           => (int) env('DISCORD_GUILD'),
+        'bot'             => (int) env('DISCORD_BOT_ID'),
+        'admin'           => (int) env('DISCORD_ADMIN_ID'),
+        'private'         => (int) env('DISCORD_PRIVATE'),
+        'role'            => (int) env('DISCORD_ROLE'),
+        'laravel_channel' => (int) env('DISCORD_LARAVEL_CHANNEL'),
 
         'prefix'    => '/',
         'not_found' => 'Command Not Found!',
@@ -60,6 +62,7 @@ return [
             'ws.disabledEvents' => [
                 'TYPING_START',
             ],
+            'intents'           => WSManager::GATEWAY_INTENTS['GUILD_MESSAGES'] + WSManager::GATEWAY_INTENTS['GUILD_MESSAGE_REACTIONS'] + WSManager::GATEWAY_INTENTS['DIRECT_MESSAGES'] + WSManager::GATEWAY_INTENTS['DIRECT_MESSAGE_REACTIONS'],
         ],
     ],
 
