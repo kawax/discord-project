@@ -2377,12 +2377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/Yasmin.git",
-                "reference": "39eb876035320aa644f20e0b4e6362ffdea6c998"
+                "reference": "07973340441f43ad141308710c5302798b577092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/39eb876035320aa644f20e0b4e6362ffdea6c998",
-                "reference": "39eb876035320aa644f20e0b4e6362ffdea6c998",
+                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/07973340441f43ad141308710c5302798b577092",
+                "reference": "07973340441f43ad141308710c5302798b577092",
                 "shasum": ""
             },
             "require": {
@@ -2427,7 +2427,7 @@
             "support": {
                 "source": "https://github.com/kawax/Yasmin/tree/master"
             },
-            "time": "2020-10-30T15:35:27+00:00"
+            "time": "2020-10-30T15:42:57+00:00"
         },
         {
             "name": "laravel-notification-channels/discord",
