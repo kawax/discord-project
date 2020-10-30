@@ -2373,16 +2373,16 @@
         },
         {
             "name": "laravel-discord/yasmin",
-            "version": "v1.0.0-beta.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/Yasmin.git",
-                "reference": "30f1458c30e7e121594071f4a553b397a5be25da"
+                "reference": "3de5138d5b68a986cc4e327699b3232a236d8ee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/30f1458c30e7e121594071f4a553b397a5be25da",
-                "reference": "30f1458c30e7e121594071f4a553b397a5be25da",
+                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/3de5138d5b68a986cc4e327699b3232a236d8ee7",
+                "reference": "3de5138d5b68a986cc4e327699b3232a236d8ee7",
                 "shasum": ""
             },
             "require": {
@@ -2406,6 +2406,7 @@
                 "react/promise": "^2.7.0",
                 "ringcentral/psr7": "^1.2"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2424,9 +2425,9 @@
             ],
             "description": "Yasmin is a Discord API library for PHP.",
             "support": {
-                "source": "https://github.com/kawax/Yasmin/tree/v1.0.0-beta.2"
+                "source": "https://github.com/kawax/Yasmin/tree/master"
             },
-            "time": "2020-10-30T06:32:56+00:00"
+            "time": "2020-10-30T06:39:02+00:00"
         },
         {
             "name": "laravel-notification-channels/discord",
@@ -5520,17 +5521,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/discord-manager.git",
-                "reference": "5d1030886065ebefa6b70542d98ea5bc9a037451"
+                "reference": "b16a8a39ec9ddbb4878836d8b4619d81cc603b36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/5d1030886065ebefa6b70542d98ea5bc9a037451",
-                "reference": "5d1030886065ebefa6b70542d98ea5bc9a037451",
+                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/b16a8a39ec9ddbb4878836d8b4619d81cc603b36",
+                "reference": "b16a8a39ec9ddbb4878836d8b4619d81cc603b36",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^6.0||^7.0||^8.0",
-                "laravel-discord/yasmin": "^1.0-beta.1",
+                "laravel-discord/yasmin": "dev-master",
                 "laravel-notification-channels/discord": "^1.0",
                 "php": "^7.3||^8.0",
                 "restcord/restcord": "^0.4.0"
@@ -5579,7 +5580,7 @@
                 "issues": "https://github.com/kawax/discord-manager/issues",
                 "source": "https://github.com/kawax/discord-manager/tree/master"
             },
-            "time": "2020-10-30T06:19:32+00:00"
+            "time": "2020-10-30T06:39:40+00:00"
         },
         {
             "name": "ringcentral/psr7",
