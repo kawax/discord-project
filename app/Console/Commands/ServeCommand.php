@@ -45,14 +45,14 @@ class ServeCommand extends Command
         Yasmin::on(
             'error',
             function ($error) {
-                info($error);
+                $this->error($error);
             }
         );
 
         Yasmin::on(
             'ready',
             function () {
-                info(
+                $this->info(
                     'Logged in as '.Yasmin::user()->tag.' created on '.Yasmin::user()->createdAt->format(
                         'd.m.Y H:i:s'
                     )
@@ -64,7 +64,7 @@ class ServeCommand extends Command
             'message',
             function (Message $message) {
                 //dd($message->channel);
-                info('Received Message from '.$message->author->tag);
+                $this->info('Received Message from '.$message->author->tag);
 
                 if ($message->author->bot) {
                     return;

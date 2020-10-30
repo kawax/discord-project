@@ -344,16 +344,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "f7eebdd092873f5d63929f21183e69ec9f5e83cd"
+                "reference": "4053eab90a7cdf0b81dd93073dc6c18c15d487fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/f7eebdd092873f5d63929f21183e69ec9f5e83cd",
-                "reference": "f7eebdd092873f5d63929f21183e69ec9f5e83cd",
+                "url": "https://api.github.com/repos/composer/composer/zipball/4053eab90a7cdf0b81dd93073dc6c18c15d487fd",
+                "reference": "4053eab90a7cdf0b81dd93073dc6c18c15d487fd",
                 "shasum": ""
             },
             "require": {
@@ -421,7 +421,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.0.3"
+                "source": "https://github.com/composer/composer/tree/2.0.4"
             },
             "funding": [
                 {
@@ -437,7 +437,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-28T14:50:56+00:00"
+            "time": "2020-10-30T21:39:11+00:00"
         },
         {
             "name": "composer/semver",
@@ -2377,12 +2377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/Yasmin.git",
-                "reference": "a5450a5cbdbe56574fd017a8b21c61d7d190fcf0"
+                "reference": "1c0a09432900d2f80a5175ef8036ae770a1fd1f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/a5450a5cbdbe56574fd017a8b21c61d7d190fcf0",
-                "reference": "a5450a5cbdbe56574fd017a8b21c61d7d190fcf0",
+                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/1c0a09432900d2f80a5175ef8036ae770a1fd1f4",
+                "reference": "1c0a09432900d2f80a5175ef8036ae770a1fd1f4",
                 "shasum": ""
             },
             "require": {
@@ -2427,7 +2427,7 @@
             "support": {
                 "source": "https://github.com/kawax/Yasmin/tree/master"
             },
-            "time": "2020-10-30T16:09:41+00:00"
+            "time": "2020-10-30T22:46:44+00:00"
         },
         {
             "name": "laravel-notification-channels/discord",
