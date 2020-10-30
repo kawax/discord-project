@@ -62,7 +62,7 @@ return [
             'ws.disabledEvents' => [
                 'TYPING_START',
             ],
-            'intents'           => WSManager::GATEWAY_INTENTS['GUILD_MESSAGES'] + WSManager::GATEWAY_INTENTS['GUILD_MESSAGE_REACTIONS'] + WSManager::GATEWAY_INTENTS['DIRECT_MESSAGES'] + WSManager::GATEWAY_INTENTS['DIRECT_MESSAGE_REACTIONS'],
+            'intents'           => 32767,
         ],
     ],
 
