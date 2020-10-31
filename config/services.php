@@ -63,12 +63,7 @@ return [
                 'TYPING_START',
             ],
             'intents'           => array_sum(
-                Intents::only(
-                    [
-                        'GUILD_MESSAGES',
-                        'DIRECT_MESSAGES',
-                    ]
-                )
+                Intents::default()
             ),
         ],
     ],
