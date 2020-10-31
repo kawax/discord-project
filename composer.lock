@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c432fb300d0a96d3778f13f9ec3a3bd6",
+    "content-hash": "8fed0bcba01622d2117552d3eeea2e9d",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -2373,16 +2373,16 @@
         },
         {
             "name": "laravel-discord/yasmin",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/Yasmin.git",
-                "reference": "ac69147025ecb060e229d70767a7e1407d155c80"
+                "reference": "a6d7a46de0844229f981ec48ac078fde9a02d902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/ac69147025ecb060e229d70767a7e1407d155c80",
-                "reference": "ac69147025ecb060e229d70767a7e1407d155c80",
+                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/a6d7a46de0844229f981ec48ac078fde9a02d902",
+                "reference": "a6d7a46de0844229f981ec48ac078fde9a02d902",
                 "shasum": ""
             },
             "require": {
@@ -2406,7 +2406,6 @@
                 "react/promise": "^2.7.0",
                 "ringcentral/psr7": "^1.2"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2425,9 +2424,9 @@
             ],
             "description": "Yasmin is a Discord API library for PHP.",
             "support": {
-                "source": "https://github.com/kawax/Yasmin/tree/master"
+                "source": "https://github.com/kawax/Yasmin/tree/v1.0.0"
             },
-            "time": "2020-10-30T23:28:08+00:00"
+            "time": "2020-10-31T03:19:31+00:00"
         },
         {
             "name": "laravel-notification-channels/discord",
@@ -5517,21 +5516,21 @@
         },
         {
             "name": "revolution/discord-manager",
-            "version": "dev-master",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/discord-manager.git",
-                "reference": "fcc73048545691d488d6493afc1aeb44a6783695"
+                "reference": "b25a1a14db9645f957e226823d69170725c1e627"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/fcc73048545691d488d6493afc1aeb44a6783695",
-                "reference": "fcc73048545691d488d6493afc1aeb44a6783695",
+                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/b25a1a14db9645f957e226823d69170725c1e627",
+                "reference": "b25a1a14db9645f957e226823d69170725c1e627",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^6.0||^7.0||^8.0",
-                "laravel-discord/yasmin": "dev-master",
+                "laravel-discord/yasmin": "^1.0",
                 "laravel-notification-channels/discord": "^1.0",
                 "php": "^7.3||^8.0",
                 "restcord/restcord": "^0.4.0"
@@ -5544,7 +5543,6 @@
                 "orchestra/testbench": "^4.0||^5.0||^6.0",
                 "phpunit/phpunit": "^8.0||^9.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -5578,9 +5576,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/discord-manager/issues",
-                "source": "https://github.com/kawax/discord-manager/tree/master"
+                "source": "https://github.com/kawax/discord-manager/tree/1.6.0"
             },
-            "time": "2020-10-30T23:33:39+00:00"
+            "time": "2020-10-31T03:32:07+00:00"
         },
         {
             "name": "ringcentral/psr7",
@@ -11503,9 +11501,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "revolution/discord-manager": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
