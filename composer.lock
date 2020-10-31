@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fed0bcba01622d2117552d3eeea2e9d",
+    "content-hash": "9364754bebbef0051df4d6da425541d6",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -2373,16 +2373,16 @@
         },
         {
             "name": "laravel-discord/yasmin",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-discord/Yasmin.git",
-                "reference": "a6d7a46de0844229f981ec48ac078fde9a02d902"
+                "reference": "b07d4f166cc68847d08db07efc27df0167981b1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-discord/Yasmin/zipball/a6d7a46de0844229f981ec48ac078fde9a02d902",
-                "reference": "a6d7a46de0844229f981ec48ac078fde9a02d902",
+                "url": "https://api.github.com/repos/laravel-discord/Yasmin/zipball/b07d4f166cc68847d08db07efc27df0167981b1f",
+                "reference": "b07d4f166cc68847d08db07efc27df0167981b1f",
                 "shasum": ""
             },
             "require": {
@@ -2424,9 +2424,9 @@
             ],
             "description": "Yasmin is a Discord API library for PHP.",
             "support": {
-                "source": "https://github.com/laravel-discord/Yasmin/tree/v1.0.0"
+                "source": "https://github.com/laravel-discord/Yasmin/tree/v1.0.1"
             },
-            "time": "2020-10-31T03:19:31+00:00"
+            "time": "2020-10-31T06:51:27+00:00"
         },
         {
             "name": "laravel-notification-channels/discord",
@@ -11505,7 +11505,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2||^8.0"
+        "php": "^7.3||^8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"

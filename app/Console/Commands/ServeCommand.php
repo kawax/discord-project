@@ -64,7 +64,7 @@ class ServeCommand extends Command
             'message',
             function (Message $message) {
                 //dd($message->channel);
-                info('Received Message from '.$message->author->tag);
+                $this->info('Received Message from '.$message->author->tag);
 
                 if ($message->author->bot) {
                     return;
