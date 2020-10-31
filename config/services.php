@@ -62,9 +62,7 @@ return [
             'ws.disabledEvents' => [
                 'TYPING_START',
             ],
-            'intents'           => array_sum(
-                Intents::default(),
-            ),
+            'intents'           => Intents::bit(Intents::default()),
         ],
     ],
 
