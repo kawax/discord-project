@@ -62,7 +62,16 @@ return [
             'ws.disabledEvents' => [
                 'TYPING_START',
             ],
-            'intents'           => array_sum(Intents::default()),
+            'intents'           => array_sum(
+                Intents::except(
+                    [
+                        'GUILD_MEMBERS',
+                        'GUILD_PRESENCES',
+                        //                        'GUILD_MESSAGE_TYPING',
+                        //                        'DIRECT_MESSAGE_TYPING',
+                    ]
+                )
+            ),
         ],
     ],
 
