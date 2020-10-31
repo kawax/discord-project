@@ -2376,12 +2376,12 @@
             "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kawax/Yasmin.git",
+                "url": "https://github.com/laravel-discord/Yasmin.git",
                 "reference": "a6d7a46de0844229f981ec48ac078fde9a02d902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/Yasmin/zipball/a6d7a46de0844229f981ec48ac078fde9a02d902",
+                "url": "https://api.github.com/repos/laravel-discord/Yasmin/zipball/a6d7a46de0844229f981ec48ac078fde9a02d902",
                 "reference": "a6d7a46de0844229f981ec48ac078fde9a02d902",
                 "shasum": ""
             },
@@ -2424,7 +2424,7 @@
             ],
             "description": "Yasmin is a Discord API library for PHP.",
             "support": {
-                "source": "https://github.com/kawax/Yasmin/tree/v1.0.0"
+                "source": "https://github.com/laravel-discord/Yasmin/tree/v1.0.0"
             },
             "time": "2020-10-31T03:19:31+00:00"
         },
