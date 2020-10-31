@@ -63,12 +63,10 @@ return [
                 'TYPING_START',
             ],
             'intents'           => array_sum(
-                Intents::except(
+                Intents::only(
                     [
-                        'GUILD_MEMBERS',
-                        'GUILD_PRESENCES',
-                        //                        'GUILD_MESSAGE_TYPING',
-                        //                        'DIRECT_MESSAGE_TYPING',
+                        'GUILD_MESSAGES',
+                        'DIRECT_MESSAGES',
                     ]
                 )
             ),
