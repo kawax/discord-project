@@ -64,7 +64,7 @@ class ServeCommand extends Command
             'message',
             function (Message $message) {
                 //dd($message->channel);
-                $this->info('Received Message from '.$message->author->tag);
+                info('Received Message from '.$message->author->tag);
 
                 if ($message->author->bot) {
                     return;
@@ -76,6 +76,7 @@ class ServeCommand extends Command
                         if ($message->mentions->members->has(config('services.discord.bot'))) {
                             //メンション時のみコマンドは有効
                             $reply = DiscordManager::command($message);
+                            info($message->content);
                             if (empty($reply)) {
                                 $reply = 'Hi! '.$message->author->username;
                             }
@@ -91,6 +92,7 @@ class ServeCommand extends Command
                     //DMの場合
                     if ($message->channel instanceof DMChannelInterface) {
                         $reply = DiscordManager::direct($message);
+                        info($message->content);
 
                         if (filled($reply)) {
                             $message->reply($reply)->done(
