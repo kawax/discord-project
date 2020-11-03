@@ -2,12 +2,12 @@
 
 namespace App\Console\Commands;
 
-use CharlotteDunois\Yasmin\Interfaces\DMChannelInterface;
-use CharlotteDunois\Yasmin\Interfaces\TextChannelInterface;
-use CharlotteDunois\Yasmin\Models\Message;
+use Discord\Discord;
+use Discord\Parts\Channel\Message;
 use Illuminate\Console\Command;
+use Revolution\DiscordManager\Exceptions\CommandNotFountException;
 use Revolution\DiscordManager\Facades\DiscordManager;
-use Revolution\DiscordManager\Facades\Yasmin;
+use Revolution\DiscordManager\Facades\DiscordPHP;
 
 class ServeCommand extends Command
 {
@@ -42,73 +42,30 @@ class ServeCommand extends Command
      */
     public function handle()
     {
-        Yasmin::on(
-            'error',
-            function ($error) {
-                $this->error($error);
-            }
-        );
+        DiscordPHP::on('error', function ($error) {
+            $this->error($error);
+        });
 
-        Yasmin::on(
-            'ready',
-            function () {
-                $this->info(
-                    'Logged in as '.Yasmin::user()->tag.' created on '.Yasmin::user()->createdAt->format(
-                        'd.m.Y H:i:s'
-                    )
-                );
-            }
-        );
+        DiscordPHP::on('ready', function (Discord $discord) {
+            $this->info('Logged in as '.$discord->user->username);
 
-        Yasmin::on(
-            'message',
-            function (Message $message) {
-                //dd($message->channel);
-                $this->info('Received Message from '.$message->author->tag);
-
-                if ($message->author->bot) {
-                    return;
-                }
+            $discord->on('message', function (Message $message) {
+                $this->info("Recieved a message from {$message->author->username}: {$message->content}");
 
                 try {
-                    if ($message->channel instanceof TextChannelInterface) {
-                        //チャンネルでのメンション
-                        if ($message->mentions->members->has(config('services.discord.bot'))) {
-                            //メンション時のみコマンドは有効
-                            $reply = DiscordManager::command($message);
-                            if (empty($reply)) {
-                                $reply = 'Hi! '.$message->author->username;
-                            }
-                            $message->reply($reply)->done(
-                                null,
-                                function ($error) {
-                                    info($error);
-                                }
-                            );
-                        }
+                    if ($message->channel->is_private) {
+                        // DM
+                        DiscordManager::direct($message);
+                    } elseif ($message->mentions->has(config('services.discord.bot'))) {
+                        // Only mention
+                        DiscordManager::command($message);
                     }
-
-                    //DMの場合
-                    if ($message->channel instanceof DMChannelInterface) {
-                        $reply = DiscordManager::direct($message);
-
-                        if (filled($reply)) {
-                            $message->reply($reply)->done(
-                                null,
-                                function ($error) {
-                                    info($error);
-                                }
-                            );
-                        }
-                    }
-                } catch (\Exception $error) {
-                    $this->error($error->getMessage());
-                    // Handle exception
+                } catch (CommandNotFountException $e) {
+                    $message->reply($e->getMessage());
                 }
-            }
-        );
+            });
+        });
 
-        Yasmin::login(config('services.discord.token'));
-        Yasmin::getLoop()->run();
+        DiscordPHP::run();
     }
 }

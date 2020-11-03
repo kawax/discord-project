@@ -1,6 +1,7 @@
 <?php
 
-use CharlotteDunois\Yasmin\WebSocket\Intents;
+use Discord\WebSockets\Event;
+use Revolution\DiscordManager\Support\Intents;
 
 return [
 
@@ -52,17 +53,23 @@ return [
         'role'            => (int) env('DISCORD_ROLE'),
         'laravel_channel' => (int) env('DISCORD_LARAVEL_CHANNEL'),
 
-        'prefix'    => '/',
-        'not_found' => 'Command Not Found!',
-        'path'      => [
+        'prefix'      => '/',
+        'not_found'   => 'Command Not Found!',
+        'path'        => [
             'commands' => app_path('Discord/Commands'),
             'directs'  => app_path('Discord/Directs'),
         ],
-        'yasmin'    => [
+        'yasmin'      => [
             'ws.disabledEvents' => [
                 'TYPING_START',
             ],
             'intents'           => array_sum(Intents::default()),
+        ],
+        'discord-php' => [
+            'disabledEvents' => [
+                Event::TYPING_START,
+            ],
+            'intents'        => array_sum(Intents::default()),
         ],
     ],
 

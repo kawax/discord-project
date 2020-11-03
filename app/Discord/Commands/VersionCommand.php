@@ -2,7 +2,7 @@
 
 namespace App\Discord\Commands;
 
-use CharlotteDunois\Yasmin\Models\Message;
+use Discord\Parts\Channel\Message;
 use GrahamCampbell\GitHub\Facades\GitHub;
 
 class VersionCommand
@@ -13,16 +13,14 @@ class VersionCommand
     public $command = 'version';
 
     /**
-     * @param Message $message
+     * @param  Message  $message
      *
-     * @return string
+     * @return void
      */
     public function __invoke(Message $message)
     {
         $tags = GitHub::repo()->tags('laravel', 'framework');
 
-        $version = $tags[0]['name'];
-
-        return $version;
+        $message->reply($tags[0]['name']);
     }
 }

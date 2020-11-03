@@ -2,10 +2,8 @@
 
 namespace App\Discord\Commands;
 
+use Discord\Parts\Channel\Message;
 use Illuminate\Support\Str;
-
-use CharlotteDunois\Yasmin\Models\Message;
-
 use Revolution\DiscordManager\Concerns\Input;
 
 class ArgvCommand
@@ -18,9 +16,9 @@ class ArgvCommand
     public $command = 'argv {test} {--text=}';
 
     /**
-     * @param Message $message
+     * @param  Message  $message
      *
-     * @return string
+     * @return void
      */
     public function __invoke(Message $message)
     {
@@ -28,10 +26,10 @@ class ArgvCommand
 
         $input = $this->input($argv);
 
-        return sprintf(
+        $message->reply(sprintf(
             'argv! argument:**%s** option:**%s**',
             $input->getArgument('test'),
             $input->getOption('text')
-        );
+        ));
     }
 }
