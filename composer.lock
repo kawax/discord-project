@@ -8924,26 +8924,25 @@
         },
         {
             "name": "wyrihaximus/file-descriptors",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-file-descriptors.git",
-                "reference": "6b3073409b94912354cc9b6bde600797940c4edf"
+                "reference": "7e2a8330c6dfe535a597e8a317b31dddf3b49398"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-file-descriptors/zipball/6b3073409b94912354cc9b6bde600797940c4edf",
-                "reference": "6b3073409b94912354cc9b6bde600797940c4edf",
+                "url": "https://api.github.com/repos/WyriHaximus/php-file-descriptors/zipball/7e2a8330c6dfe535a597e8a317b31dddf3b49398",
+                "reference": "7e2a8330c6dfe535a597e8a317b31dddf3b49398",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2",
+                "php": "^8 || ^7.4",
                 "tivie/php-os-detector": "^1.1"
             },
             "require-dev": {
-                "api-clients/cs-fixer-config": "^1.1",
-                "api-clients/test-utilities": "^5.4",
-                "wyrihaximus/iterator-or-array-to-array": "^1.0"
+                "wyrihaximus/iterator-or-array-to-array": "^1.1",
+                "wyrihaximus/test-utilities": "^3.3.1"
             },
             "type": "library",
             "autoload": {
@@ -8964,9 +8963,15 @@
             "description": "List open file descriptors for the current process cross platform",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-file-descriptors/issues",
-                "source": "https://github.com/WyriHaximus/php-file-descriptors/tree/master"
+                "source": "https://github.com/WyriHaximus/php-file-descriptors/tree/1.1.0"
             },
-            "time": "2019-01-15T16:08:10+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-25T23:03:56+00:00"
         },
         {
             "name": "wyrihaximus/json-throwable",
@@ -9018,24 +9023,24 @@
         },
         {
             "name": "wyrihaximus/json-utilities",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-json-utilities.git",
-                "reference": "6da6fb482760e0eed7cc39ae9477fd665a6e1330"
+                "reference": "dce46df18c70ab7e206fe7bda4f4c59506f17be6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-json-utilities/zipball/6da6fb482760e0eed7cc39ae9477fd665a6e1330",
-                "reference": "6da6fb482760e0eed7cc39ae9477fd665a6e1330",
+                "url": "https://api.github.com/repos/WyriHaximus/php-json-utilities/zipball/dce46df18c70ab7e206fe7bda4f4c59506f17be6",
+                "reference": "dce46df18c70ab7e206fe7bda4f4c59506f17be6",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4",
+                "php": "^8 || ^7.4",
                 "thecodingmachine/safe": "^1.1"
             },
             "require-dev": {
-                "wyrihaximus/test-utilities": "^2.3"
+                "wyrihaximus/test-utilities": "^3.3.1"
             },
             "type": "library",
             "autoload": {
@@ -9059,7 +9064,7 @@
             "description": "Utilities for php-json-* packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-json-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-json-utilities/tree/master"
+                "source": "https://github.com/WyriHaximus/php-json-utilities/tree/1.3.0"
             },
             "funding": [
                 {
@@ -9067,7 +9072,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-05-05T20:08:50+00:00"
+            "time": "2020-11-25T11:27:40+00:00"
         },
         {
             "name": "wyrihaximus/react-child-process-messenger",
