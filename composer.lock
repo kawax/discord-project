@@ -1428,16 +1428,16 @@
         },
         {
             "name": "graham-campbell/github",
-            "version": "v9.8.1",
+            "version": "v9.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Laravel-GitHub.git",
-                "reference": "03de47baf9d213e0c5a59eaa8e881f7174dbb7af"
+                "reference": "d2466db02cc628c07f054fe8ecc7dcc51b7a6ab5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-GitHub/zipball/03de47baf9d213e0c5a59eaa8e881f7174dbb7af",
-                "reference": "03de47baf9d213e0c5a59eaa8e881f7174dbb7af",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-GitHub/zipball/d2466db02cc628c07f054fe8ecc7dcc51b7a6ab5",
+                "reference": "d2466db02cc628c07f054fe8ecc7dcc51b7a6ab5",
                 "shasum": ""
             },
             "require": {
@@ -1501,7 +1501,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Laravel-GitHub/issues",
-                "source": "https://github.com/GrahamCampbell/Laravel-GitHub/tree/v9.8.1"
+                "source": "https://github.com/GrahamCampbell/Laravel-GitHub/tree/v9.8.2"
             },
             "funding": [
                 {
@@ -1513,7 +1513,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-08T19:11:02+00:00"
+            "time": "2021-01-14T15:38:52+00:00"
         },
         {
             "name": "graham-campbell/manager",
