@@ -6,19 +6,22 @@
     "type": "project",
     "require": {
         "php": "^7.3||^8.0",
-        "barryvdh/laravel-ide-helper": "^2.4",
         "fideloper/proxy": "^4.0",
-        "graham-campbell/github": "^9.0",
-        "laravel/framework": "^6.0",
+        "fruitcake/laravel-cors": "^2.0",
+        "graham-campbell/github": "^10.1",
+        "guzzlehttp/guzzle": "^7.2",
+        "http-interop/http-factory-guzzle": "^1.0",
+        "laravel/framework": "^8.0",
+        "laravel/legacy-factories": "^1.1",
         "laravel/tinker": "^2.0",
-        "php-http/guzzle6-adapter": "^2.0",
         "revolution/discord-manager": "^2.0"
     },
     "require-dev": {
-        "facade/ignition": "^1.4",
+        "facade/ignition": "^2.7",
         "fakerphp/faker": "^1.10",
         "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^3.0",
+        "nunomaduro/collision": "^5.3",
+        "barryvdh/laravel-ide-helper": "^2.4",
         "phpunit/phpunit": "^9.0"
     },
     "autoload": {
