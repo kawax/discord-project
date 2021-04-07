@@ -1631,16 +1631,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.35.1",
+            "version": "v8.36.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d118c0df39e7524131176aaf76493eae63a8a602"
+                "reference": "91c454715b81b9a39f718651d4e2f8104d45e7c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d118c0df39e7524131176aaf76493eae63a8a602",
-                "reference": "d118c0df39e7524131176aaf76493eae63a8a602",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/91c454715b81b9a39f718651d4e2f8104d45e7c2",
+                "reference": "91c454715b81b9a39f718651d4e2f8104d45e7c2",
                 "shasum": ""
             },
             "require": {
@@ -1795,7 +1795,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-30T21:34:17+00:00"
+            "time": "2021-04-06T21:14:06+00:00"
         },
         {
             "name": "laravel/legacy-factories",
@@ -4726,16 +4726,16 @@
         },
         {
             "name": "revolution/discord-manager",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/discord-manager.git",
-                "reference": "b3214b95dad91b29435fc5fee564ea0f0347f691"
+                "reference": "d2dd4fc70d2b3c8a3c7d8911af33d3de6330cdb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/b3214b95dad91b29435fc5fee564ea0f0347f691",
-                "reference": "b3214b95dad91b29435fc5fee564ea0f0347f691",
+                "url": "https://api.github.com/repos/kawax/discord-manager/zipball/d2dd4fc70d2b3c8a3c7d8911af33d3de6330cdb0",
+                "reference": "d2dd4fc70d2b3c8a3c7d8911af33d3de6330cdb0",
                 "shasum": ""
             },
             "require": {
@@ -4786,9 +4786,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/discord-manager/issues",
-                "source": "https://github.com/kawax/discord-manager/tree/2.2.0"
+                "source": "https://github.com/kawax/discord-manager/tree/2.2.1"
             },
-            "time": "2021-04-03T13:18:13+00:00"
+            "time": "2021-04-07T00:56:01+00:00"
         },
         {
             "name": "ringcentral/psr7",
