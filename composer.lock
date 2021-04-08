@@ -1478,12 +1478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
-                "reference": "5c540ae71ae175e9763d8cabbea48fea387718b7"
+                "reference": "9c57106b7ba55c17d0a2d9a6e7cef4cd4c637e4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/5c540ae71ae175e9763d8cabbea48fea387718b7",
-                "reference": "5c540ae71ae175e9763d8cabbea48fea387718b7",
+                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/9c57106b7ba55c17d0a2d9a6e7cef4cd4c637e4d",
+                "reference": "9c57106b7ba55c17d0a2d9a6e7cef4cd4c637e4d",
                 "shasum": ""
             },
             "require": {
@@ -1517,7 +1517,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.19.x-dev",
+                    "dev-2.x": "2.20.x-dev",
                     "dev-master": "3.2.x-dev"
                 }
             },
@@ -1559,7 +1559,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-04T17:57:51+00:00"
+            "time": "2021-04-07T09:22:12+00:00"
         },
         {
             "name": "laravel-notification-channels/discord",
@@ -1631,16 +1631,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.36.1",
+            "version": "v8.36.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "91c454715b81b9a39f718651d4e2f8104d45e7c2"
+                "reference": "0debd8ad6b5aa1f61ccc73910adf049af4ca0444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/91c454715b81b9a39f718651d4e2f8104d45e7c2",
-                "reference": "91c454715b81b9a39f718651d4e2f8104d45e7c2",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/0debd8ad6b5aa1f61ccc73910adf049af4ca0444",
+                "reference": "0debd8ad6b5aa1f61ccc73910adf049af4ca0444",
                 "shasum": ""
             },
             "require": {
@@ -1795,7 +1795,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-04-06T21:14:06+00:00"
+            "time": "2021-04-07T12:37:22+00:00"
         },
         {
             "name": "laravel/legacy-factories",
@@ -7416,16 +7416,16 @@
         },
         {
             "name": "team-reflex/discord-php",
-            "version": "v5.1.2",
+            "version": "v5.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/discord-php/DiscordPHP.git",
-                "reference": "f61603d42247e10da32d654a0d6b346f571b3aaa"
+                "reference": "83531277db436a9c054ec6f58f6c8c0e0823e156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/discord-php/DiscordPHP/zipball/f61603d42247e10da32d654a0d6b346f571b3aaa",
-                "reference": "f61603d42247e10da32d654a0d6b346f571b3aaa",
+                "url": "https://api.github.com/repos/discord-php/DiscordPHP/zipball/83531277db436a9c054ec6f58f6c8c0e0823e156",
+                "reference": "83531277db436a9c054ec6f58f6c8c0e0823e156",
                 "shasum": ""
             },
             "require": {
@@ -7480,9 +7480,9 @@
             "description": "An unofficial API to interact with the voice and text service Discord.",
             "support": {
                 "issues": "https://github.com/discord-php/DiscordPHP/issues",
-                "source": "https://github.com/discord-php/DiscordPHP/tree/v5.1.2"
+                "source": "https://github.com/discord-php/DiscordPHP/tree/v5.1.3"
             },
-            "time": "2021-03-02T05:53:18+00:00"
+            "time": "2021-04-07T09:01:13+00:00"
         },
         {
             "name": "textalk/websocket",
