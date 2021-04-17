@@ -1441,12 +1441,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
-                "reference": "ac3bb89e3cd9a9edebd8ace0cbc373014c3ebfa2"
+                "reference": "26a838ba251b9151c470a63b26a1ff45cebb5ba2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/ac3bb89e3cd9a9edebd8ace0cbc373014c3ebfa2",
-                "reference": "ac3bb89e3cd9a9edebd8ace0cbc373014c3ebfa2",
+                "url": "https://api.github.com/repos/KnpLabs/php-github-api/zipball/26a838ba251b9151c470a63b26a1ff45cebb5ba2",
+                "reference": "26a838ba251b9151c470a63b26a1ff45cebb5ba2",
                 "shasum": ""
             },
             "require": {
@@ -1522,7 +1522,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-09T18:09:20+00:00"
+            "time": "2021-04-16T09:36:39+00:00"
         },
         {
             "name": "laravel-notification-channels/discord",
