@@ -19,6 +19,8 @@ class TestCommand
      */
     public function __invoke(Message $message)
     {
-        $message->reply('Hi! '.$message->author->username);
+        $message->reply('Hi! '.$message->author->username)
+                ->done(function (Message $message) {
+                });
     }
 }

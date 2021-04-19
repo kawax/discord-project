@@ -5,7 +5,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.3||^8.0",
+        "php": "^7.4||^8.0",
         "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "graham-campbell/github": "^10.1",
@@ -14,7 +14,7 @@
         "laravel/framework": "^8.0",
         "laravel/legacy-factories": "^1.1",
         "laravel/tinker": "^2.0",
-        "revolution/discord-manager": "^2.0"
+        "revolution/discord-manager": "^3.0"
     },
     "require-dev": {
         "facade/ignition": "^2.7",

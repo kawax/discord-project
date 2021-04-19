@@ -19,6 +19,8 @@ class TestCommand
      */
     public function __invoke(Message $message)
     {
-        $message->reply('test command');
+        $message->reply('test command')
+                ->done(function (Message $message) {
+                });
     }
 }

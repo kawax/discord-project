@@ -21,6 +21,8 @@ class VersionCommand
     {
         $tags = GitHub::repo()->tags('laravel', 'framework');
 
-        $message->reply($tags[0]['name']);
+        $message->reply($tags[0]['name'])
+                ->done(function (Message $message) {
+                });
     }
 }
