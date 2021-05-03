@@ -785,16 +785,16 @@
         },
         {
             "name": "graham-campbell/github",
-            "version": "10.2.x-dev",
+            "version": "v10.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Laravel-GitHub.git",
-                "reference": "586d17c3ac8973c18b86a24b70629dc2db70acc4"
+                "reference": "08f7be59300004a489e120b794a58db809e22cb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-GitHub/zipball/586d17c3ac8973c18b86a24b70629dc2db70acc4",
-                "reference": "586d17c3ac8973c18b86a24b70629dc2db70acc4",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-GitHub/zipball/08f7be59300004a489e120b794a58db809e22cb1",
+                "reference": "08f7be59300004a489e120b794a58db809e22cb1",
                 "shasum": ""
             },
             "require": {
@@ -808,7 +808,7 @@
             },
             "require-dev": {
                 "graham-campbell/analyzer": "^3.0",
-                "graham-campbell/testbench": "^5.4",
+                "graham-campbell/testbench": "^5.6",
                 "guzzlehttp/guzzle": "^7.2",
                 "http-interop/http-factory-guzzle": "^1.0",
                 "lcobucci/jwt": "^3.4 || ^4.0",
@@ -857,7 +857,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Laravel-GitHub/issues",
-                "source": "https://github.com/GrahamCampbell/Laravel-GitHub/tree/10.2"
+                "source": "https://github.com/GrahamCampbell/Laravel-GitHub/tree/v10.2.0"
             },
             "funding": [
                 {
@@ -869,7 +869,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-14T23:54:25+00:00"
+            "time": "2021-05-02T23:54:33+00:00"
         },
         {
             "name": "graham-campbell/manager",
@@ -2327,16 +2327,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.46.0",
+            "version": "2.47.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4"
+                "reference": "606262fd8888b75317ba9461825a24fc34001e1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4",
-                "reference": "2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/606262fd8888b75317ba9461825a24fc34001e1e",
+                "reference": "606262fd8888b75317ba9461825a24fc34001e1e",
                 "shasum": ""
             },
             "require": {
@@ -2416,7 +2416,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-24T17:30:44+00:00"
+            "time": "2021-04-13T21:54:02+00:00"
         },
         {
             "name": "netresearch/jsonmapper",
