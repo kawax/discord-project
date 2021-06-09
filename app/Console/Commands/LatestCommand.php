@@ -52,6 +52,8 @@ class LatestCommand extends Command
             return;
         }
 
+        info($ver);
+
         cache()->forever('latest_ver', $ver);
 
         try {
