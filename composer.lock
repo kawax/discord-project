@@ -186,16 +186,16 @@
         },
         {
             "name": "discord-php/http",
-            "version": "v8.1.1",
+            "version": "v8.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/discord-php/DiscordPHP-Http.git",
-                "reference": "a49e28c9c37230c9ce5a1ba5ef2483142c753f72"
+                "reference": "1a5a663954db4a4415f5b3f5ee183e68487a18a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/discord-php/DiscordPHP-Http/zipball/a49e28c9c37230c9ce5a1ba5ef2483142c753f72",
-                "reference": "a49e28c9c37230c9ce5a1ba5ef2483142c753f72",
+                "url": "https://api.github.com/repos/discord-php/DiscordPHP-Http/zipball/1a5a663954db4a4415f5b3f5ee183e68487a18a7",
+                "reference": "1a5a663954db4a4415f5b3f5ee183e68487a18a7",
                 "shasum": ""
             },
             "require": {
@@ -227,9 +227,9 @@
             "description": "Handles HTTP requests to Discord servers",
             "support": {
                 "issues": "https://github.com/discord-php/DiscordPHP-Http/issues",
-                "source": "https://github.com/discord-php/DiscordPHP-Http/tree/v8.1.1"
+                "source": "https://github.com/discord-php/DiscordPHP-Http/tree/v9.0.3"
             },
-            "time": "2021-05-08T05:47:09+00:00"
+            "time": "2021-07-02T23:39:34+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -1640,16 +1640,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.49.0",
+            "version": "v8.49.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "855a919d08b45f93cb3cf709736528c3d1531884"
+                "reference": "62aee1bfeefd82f160c7aa3b4c63cb2f053215c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/855a919d08b45f93cb3cf709736528c3d1531884",
-                "reference": "855a919d08b45f93cb3cf709736528c3d1531884",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/62aee1bfeefd82f160c7aa3b4c63cb2f053215c0",
+                "reference": "62aee1bfeefd82f160c7aa3b4c63cb2f053215c0",
                 "shasum": ""
             },
             "require": {
@@ -1804,7 +1804,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-06-29T13:50:21+00:00"
+            "time": "2021-07-02T16:50:12+00:00"
         },
         {
             "name": "laravel/legacy-factories",
